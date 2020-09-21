@@ -7,7 +7,6 @@ easy_admin:
         actions:
           - {name: 'list', icon: 'tag', label: 'Liste des expressions citoyennes', css_class: 'btn btn-success'}
         fields:
-          - {property: 'id' }
           - {property: 'titre'}
           - {property: 'description', type: 'fos_ckeditor'}
           - {property: 'created_at'}
