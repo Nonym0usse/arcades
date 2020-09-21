@@ -1,0 +1,45 @@
+easy_admin:
+  design:
+    assets:
+      css:
+        - 'css/fontawesome.css'
+    menu:
+      - label: 'Actualités'
+        icon: 'newspaper'
+        children:
+          - {entity: 'Product', icon: 'newspaper-o', label: 'Actualités'}
+      - label: 'Nouvelles adhésions'
+        icon: 'user-o'
+        children:
+          - {entity: 'Cotisation', icon: 'user-o', label: 'Nouvelles adhésions'}
+      - label: 'Expression citoyenne'
+        icon: 'exclamation'
+        children:
+          - {entity: 'Citoyen', icon: 'exclamation', label: 'Expressions citoyennes'}
+      - label: 'Comptes Rendus'
+        icon: 'paperclip'
+        children:
+          - {entity: 'CompteRendu', icon: 'paperclip', label: 'Comptes Rendus'}
+      - label: 'Textes Accueil'
+        icon: 'home'
+        children:
+          - {entity: 'Diaporama', icon: 'home', label: 'Textes accueil'}
+      - label: 'Pétitions'
+        icon: 'user-o'
+        children:
+          - {entity: 'Petition', icon: 'user-o', label: 'Ajouter une pétition'}
+          - {entity: 'PetitionParticipant', icon: 'user-o', label: 'Voir les pétitions signées'}
+      - label: 'Formulaires'
+        icon: 'user-o'
+        children:
+          - {entity: 'Formulaire', icon: 'user-o', label: 'Ajouter un formulaire'}
+          - {entity: 'FormulaireParticipant', icon: 'user-o', label: 'Voir les formulaires remplis'}
+      - label: "Gallerie d'images"
+        icon: 'globe'
+        children:
+          - {entity: 'Gallery', icon: 'globe', label: 'Ajouter une image'}
+      - label: "Textes galerie image"
+        icon: 'globe'
+        children:
+          - {entity: 'TextGallery', icon: 'globe', label: 'Ajouter un texte'}
+      - { label: 'Revenir au site', url: 'https://arcades13127.fr', rel: 'index' }

@@ -1,0 +1,14 @@
+easy_admin:
+  entities:
+    Diaporama:
+      class: App\Entity\Diaporama
+      list:
+        title: "Textes du diaporama"
+        fields:
+          - { property: 'id' }
+          - { property: 'diapo1' }
+          - { property: 'diapo2' }
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          - {name: 'new', icon: 'plus', label: 'Ajouter des textes', css_class: 'btn btn-success'}

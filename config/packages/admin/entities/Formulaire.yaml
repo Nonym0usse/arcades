@@ -1,0 +1,35 @@
+easy_admin:
+  entities:
+    Formulaire:
+      class: App\Entity\Formulaire
+      edit:
+        title: "Modifier un formulaire"
+        fields:
+          - {property: 'titre'}
+          - {property: 'description', type: 'fos_ckeditor'}
+          - {property: 'imageFile', type: 'vich_image' }
+          - {property: 'dates'}
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des formulaires', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer la formulaire", css_class: 'btn btn-danger'}
+      new:
+        title: "Ajouter un formulaire"
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des formulaires', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer le formulaire", css_class: 'btn btn-danger'}
+        fields:
+          - {property: 'titre'}
+          - {property: 'description', type: 'fos_ckeditor'}
+          - {property: 'imageFile', type: 'vich_image' }
+          - {property: 'dates'}
+      list:
+        title: "Liste des formulaires"
+        fields:
+          - { property: 'id' }
+          - { property: 'titre' }
+          - { property: 'description'}
+          - { property: 'img', type: 'image', base_path: '%app.path.product_images%' }
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          - {name: 'new', icon: 'plus', label: 'Ajouter un formulaire', css_class: 'btn btn-success'}

@@ -1,0 +1,31 @@
+easy_admin:
+  entities:
+    Gallery:
+      class: App\Entity\Gallery
+      edit:
+        title: "Modifier une image"
+        fields:
+          - {property: 'imageFile', type: 'vich_image' }
+          - {property: 'subtitle', type: 'fos_ckeditor'}
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des images', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer l'image", css_class: 'btn btn-danger'}
+      new:
+        title: "Ajouter une image"
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des images', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer l'image", css_class: 'btn btn-danger'}
+        fields:
+          - {property: 'imageFile', type: 'vich_image' }
+          - {property: 'dates'}
+          - {property: 'subtitle', type: 'fos_ckeditor'}
+      list:
+        title: "Liste des images"
+        fields:
+          - { property: 'id' }
+          - { property: 'img', type: 'image', base_path: '%app.path.product_images%' }
+          - { property: 'subtitle'}
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          - {name: 'new', icon: 'plus', label: 'Ajouter une pétition', css_class: 'btn btn-success'}

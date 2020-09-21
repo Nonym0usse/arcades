@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SecurityController!{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+
+    {{ form_row(form.email, {'label': 'Adresse mail', 'attr': {'placeholder': 'Votre email'}}) }}
+    {{ form_row(form.roles, {'label': 'Role', 'attr': {'placeholder': 'Votre role'}}) }}
+    {{ form_row(form.password, {'label': 'Mdp', 'attr': {'placeholder': 'Votre mdp'}}) }}
+    <button type="submit">Enregister</button>
+    {{ form_end(form) }}
+{% endblock %}

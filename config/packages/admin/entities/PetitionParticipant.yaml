@@ -1,0 +1,17 @@
+easy_admin:
+  entities:
+    PetitionParticipant:
+      class: App\Entity\PetitionParticipant
+      list:
+        title: "Liste des pétitions signées"
+        fields:
+          - { property: 'id' }
+          - { property: 'nom' }
+          - { property: 'prenom'}
+          - { property: 'tel'}
+          - { property: 'mail'}
+          - { property: 'date'}
+          - { property: 'lien'}
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
