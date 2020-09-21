@@ -1,0 +1,150 @@
+<?php return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\FormulaireParticipant',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\FormulaireParticipant',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\FormulaireParticipantRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'nom' => [
+                        'fieldName' => 'nom',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 64,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'nom',
+                    ],
+                    'prenom' => [
+                        'fieldName' => 'prenom',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 64,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'prenom',
+                    ],
+                    'tel' => [
+                        'fieldName' => 'tel',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 14,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'tel',
+                    ],
+                    'mail' => [
+                        'fieldName' => 'mail',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 64,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'mail',
+                    ],
+                    'est_membre' => [
+                        'fieldName' => 'est_membre',
+                        'type' => 'boolean',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'est_membre',
+                    ],
+                    'date' => [
+                        'fieldName' => 'date',
+                        'type' => 'date',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'date',
+                    ],
+                    'lien' => [
+                        'fieldName' => 'lien',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'lien',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'nom' => 'nom',
+                    'prenom' => 'prenom',
+                    'tel' => 'tel',
+                    'mail' => 'mail',
+                    'est_membre' => 'est_membre',
+                    'date' => 'date',
+                    'lien' => 'lien',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'nom' => 'nom',
+                    'prenom' => 'prenom',
+                    'tel' => 'tel',
+                    'mail' => 'mail',
+                    'est_membre' => 'est_membre',
+                    'date' => 'date',
+                    'lien' => 'lien',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'formulaire_participant',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
