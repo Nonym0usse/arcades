@@ -54,6 +54,6 @@ class __TwigTemplate_6836771ea08749f0c828636e52d86bed114cf1a61b6702bb5b04534868d
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/checkbox_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
+        return new Source("", "@Framework/Form/checkbox_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
     }
 }

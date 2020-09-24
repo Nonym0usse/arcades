@@ -50,6 +50,6 @@ class __TwigTemplate_62b3f678bfe7da9702727e6c615d765b540dd3e62991b961c915d64b6b1
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/chevron-right.svg", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
+        return new Source("", "@Twig/images/chevron-right.svg", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
     }
 }

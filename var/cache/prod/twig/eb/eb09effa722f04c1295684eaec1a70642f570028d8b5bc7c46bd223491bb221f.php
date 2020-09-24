@@ -51,6 +51,6 @@ class __TwigTemplate_bbb46fdef0bcb5456935590a703e8cfb4f0b5664ebbd01895d2fb6449cc
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/widget_attributes.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/widget_attributes.html.php");
+        return new Source("", "@Framework/Form/widget_attributes.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/widget_attributes.html.php");
     }
 }

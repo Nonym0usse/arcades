@@ -56,6 +56,6 @@ class __TwigTemplate_8a321a802152b40255c67d97c2e67e2d611cdb2d39de58a6c99999aafb6
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/Exception/exception.rdf.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/Exception/exception.rdf.twig");
+        return new Source("", "@Twig/Exception/exception.rdf.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/Exception/exception.rdf.twig");
     }
 }

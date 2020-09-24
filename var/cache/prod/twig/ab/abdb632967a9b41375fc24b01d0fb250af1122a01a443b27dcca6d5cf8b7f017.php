@@ -150,6 +150,6 @@ class __TwigTemplate_0dbd1f956d94a7d4590875fae7401410b2a31a049917320e7909134bb0d
 
     public function getSourceContext()
     {
-        return new Source("", "@KnpPaginator/Pagination/sliding.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig");
+        return new Source("", "@KnpPaginator/Pagination/sliding.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig");
     }
 }

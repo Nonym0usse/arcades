@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerCLI90hh;
+namespace ContainerLINrCkO;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -545,6 +545,9 @@ class srcApp_KernelProdContainer extends Container
         $instance->addListener('kernel.request', [0 => function () {
             return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
         }, 1 => 'configure'], 2048);
+        $instance->addListener('console.command', [0 => function () {
+            return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
+        }, 1 => 'configure'], 2048);
         $instance->addListener('kernel.exception', [0 => function () {
             return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
         }, 1 => 'onKernelException'], -2048);
@@ -852,7 +855,7 @@ class srcApp_KernelProdContainer extends Container
      */
     protected function getCache_EasyadminService()
     {
-        return $this->privates['cache.easyadmin'] = \Symfony\Component\Cache\Adapter\AbstractAdapter::createSystemCache('6HfXaUbeFL', 0, $this->getParameter('container.build_id'), ($this->targetDirs[0].'/pools'), ($this->privates['monolog.logger.cache'] ?? $this->getMonolog_Logger_CacheService()));
+        return $this->privates['cache.easyadmin'] = \Symfony\Component\Cache\Adapter\AbstractAdapter::createSystemCache('XQyHBERJPa', 0, $this->getParameter('container.build_id'), ($this->targetDirs[0].'/pools'), ($this->privates['monolog.logger.cache'] ?? $this->getMonolog_Logger_CacheService()));
     }
 
     /*
@@ -862,7 +865,7 @@ class srcApp_KernelProdContainer extends Container
      */
     protected function getCache_PropertyAccessService()
     {
-        return $this->privates['cache.property_access'] = \Symfony\Component\PropertyAccess\PropertyAccessor::createCache('jtWoKjP6Fq', 0, $this->getParameter('container.build_id'), ($this->privates['monolog.logger.cache'] ?? $this->getMonolog_Logger_CacheService()));
+        return $this->privates['cache.property_access'] = \Symfony\Component\PropertyAccess\PropertyAccessor::createCache('4GojNofxJJ', 0, $this->getParameter('container.build_id'), ($this->privates['monolog.logger.cache'] ?? $this->getMonolog_Logger_CacheService()));
     }
 
     /*
@@ -1905,6 +1908,9 @@ class srcApp_KernelProdContainer extends Container
                                 1 => [
                                     'property' => 'description',
                                     'type' => 'fos_ckeditor',
+                                ],
+                                2 => [
+                                    'property' => 'created_at',
                                 ],
                             ],
                         ],

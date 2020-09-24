@@ -107,6 +107,6 @@ class __TwigTemplate_599cabfbc4b72b1b9a92a39f18bde2adf58d44e9293a6a6e0083126ef00
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/paginator.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/paginator.html.twig");
+        return new Source("", "@EasyAdmin/default/paginator.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/paginator.html.twig");
     }
 }

@@ -50,6 +50,6 @@ class __TwigTemplate_6a438bde3c5e6607a330bf704942543322ef3212d01113451ca62d1b059
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/hidden_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/hidden_widget.html.php");
+        return new Source("", "@Framework/Form/hidden_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/hidden_widget.html.php");
     }
 }

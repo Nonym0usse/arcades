@@ -287,6 +287,6 @@ class __TwigTemplate_f4ff09db39efffa78ff0e7308764b04fffc58cc465114f2d24a6b0b10e4
 
     public function getSourceContext()
     {
-        return new Source("", "blog/index.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/templates/blog/index.html.twig");
+        return new Source("", "blog/index.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/templates/blog/index.html.twig");
     }
 }

@@ -203,6 +203,6 @@ class __TwigTemplate_781f94b6506c7914c0cd02be04a30ffb302df764de2576c12cab3ce1015
 
     public function getSourceContext()
     {
-        return new Source("", "citoyens/index.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/templates/citoyens/index.html.twig");
+        return new Source("", "citoyens/index.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/templates/citoyens/index.html.twig");
     }
 }

@@ -127,6 +127,6 @@ class __TwigTemplate_22a0ffa5784bf1d83fb03917efe1360fc32ff6ec9b39a45bd49e7d34db2
 
     public function getSourceContext()
     {
-        return new Source("", "@VichUploader/Collector/icon_white.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/vich/uploader-bundle/Resources/views/Collector/icon_white.html.twig");
+        return new Source("", "@VichUploader/Collector/icon_white.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/vich/uploader-bundle/Resources/views/Collector/icon_white.html.twig");
     }
 }

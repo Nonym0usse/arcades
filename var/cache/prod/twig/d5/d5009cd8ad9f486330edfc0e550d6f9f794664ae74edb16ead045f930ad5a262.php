@@ -245,6 +245,6 @@ class __TwigTemplate_e18a3186d6d8ee76e6ed5645edc36893a56287bdca07c3bac725e45c62e
 
     public function getSourceContext()
     {
-        return new Source("", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/bulma_pagination.html.twig");
+        return new Source("", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/bulma_pagination.html.twig");
     }
 }

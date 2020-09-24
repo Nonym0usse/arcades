@@ -675,6 +675,6 @@ class __TwigTemplate_5cdf9fefd963931bcd2dbafad20f2d990855fa29ab9e07c677abf77b6cd
 
     public function getSourceContext()
     {
-        return new Source("", "@Swiftmailer/Collector/swiftmailer.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+        return new Source("", "@Swiftmailer/Collector/swiftmailer.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

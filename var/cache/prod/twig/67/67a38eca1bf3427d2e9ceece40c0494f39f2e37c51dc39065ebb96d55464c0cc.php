@@ -245,6 +245,6 @@ class __TwigTemplate_d6e864dc27ee4712a73c40e2a48eae88148bd26d6b8eb74f15d6f65d752
 
     public function getSourceContext()
     {
-        return new Source("", "@FOSCKEditor/Form/ckeditor_widget.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/friendsofsymfony/ckeditor-bundle/src/Resources/views/Form/ckeditor_widget.html.twig");
+        return new Source("", "@FOSCKEditor/Form/ckeditor_widget.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/friendsofsymfony/ckeditor-bundle/src/Resources/views/Form/ckeditor_widget.html.twig");
     }
 }

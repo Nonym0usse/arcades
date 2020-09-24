@@ -50,6 +50,6 @@ class __TwigTemplate_8440639185bd80b0d9c01f3aa9354fc612112686f900f892fbf56dd7a1d
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/symfony-ghost.svg", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/images/symfony-ghost.svg");
+        return new Source("", "@Twig/images/symfony-ghost.svg", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/images/symfony-ghost.svg");
     }
 }

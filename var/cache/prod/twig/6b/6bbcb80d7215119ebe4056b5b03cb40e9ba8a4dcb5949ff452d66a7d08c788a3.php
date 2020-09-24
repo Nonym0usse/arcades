@@ -138,6 +138,6 @@ class __TwigTemplate_459af2d4b101c01c7dddacd867a13b666e83310315b59668c210e0ee83f
 
     public function getSourceContext()
     {
-        return new Source("", "compte_rendus/show.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/templates/compte_rendus/show.html.twig");
+        return new Source("", "compte_rendus/show.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/templates/compte_rendus/show.html.twig");
     }
 }

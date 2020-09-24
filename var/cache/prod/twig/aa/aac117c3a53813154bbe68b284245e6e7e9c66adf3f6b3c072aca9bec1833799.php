@@ -62,6 +62,6 @@ class __TwigTemplate_68a250fe2ca4ccb9c525e31729f5fac49ac20fe31cfa2ad6e8878b2d3f8
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/choice_widget_options.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_options.html.php");
+        return new Source("", "@Framework/Form/choice_widget_options.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_options.html.php");
     }
 }

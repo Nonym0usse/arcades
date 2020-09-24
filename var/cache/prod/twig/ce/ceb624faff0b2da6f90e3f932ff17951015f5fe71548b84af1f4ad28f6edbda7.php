@@ -51,6 +51,6 @@ class __TwigTemplate_59102b1d7850f2bc123f2cef1d38b9f55933d321b28d424d4b6fc1b78ee
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/percent_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+        return new Source("", "@Framework/Form/percent_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
     }
 }

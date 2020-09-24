@@ -153,6 +153,6 @@ class __TwigTemplate_9810c800659fe8f7febff6f13426df84ac89daab44f3c99ec9d1e58a1f0
 
     public function getSourceContext()
     {
-        return new Source("", "@VichUploader/Form/fields.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig");
+        return new Source("", "@VichUploader/Form/fields.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig");
     }
 }

@@ -50,6 +50,6 @@ class __TwigTemplate_94f92a51c6203013c6ecbd8d9f6f260da6fcd35567788c65bf31011ac6e
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/icon-minus-square-o.svg", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/images/icon-minus-square-o.svg");
+        return new Source("", "@Twig/images/icon-minus-square-o.svg", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/images/icon-minus-square-o.svg");
     }
 }

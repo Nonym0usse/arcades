@@ -473,6 +473,6 @@ class __TwigTemplate_e39a44ed5614e7d5b0fc3dd75709bc40e84aee27f8d2400605235716c8e
 
     public function getSourceContext()
     {
-        return new Source("", "gallery/index.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/templates/gallery/index.html.twig");
+        return new Source("", "gallery/index.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/templates/gallery/index.html.twig");
     }
 }

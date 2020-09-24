@@ -143,6 +143,6 @@ class __TwigTemplate_9403bb53dcd6257cb09426cd52da8e67e0b32e8d5dcf01c9d1fc52d43d8
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/layout.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+        return new Source("", "@Twig/layout.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

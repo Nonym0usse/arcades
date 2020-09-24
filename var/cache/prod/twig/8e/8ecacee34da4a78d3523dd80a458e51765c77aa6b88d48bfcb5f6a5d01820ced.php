@@ -97,6 +97,6 @@ array_key_exists("is_dropdown", $context)) ? (_twig_default_filter(($context["is
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/includes/_actions.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/includes/_actions.html.twig");
+        return new Source("", "@EasyAdmin/default/includes/_actions.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/includes/_actions.html.twig");
     }
 }

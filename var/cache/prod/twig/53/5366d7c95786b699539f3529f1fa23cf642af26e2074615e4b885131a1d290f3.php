@@ -110,6 +110,6 @@ class __TwigTemplate_b1d6db54b0a3dfc6a01d3d5750467b1c21d00c042124b7a8cd09f4a92f9
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/includes/_delete_form.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/includes/_delete_form.html.twig");
+        return new Source("", "@EasyAdmin/default/includes/_delete_form.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/includes/_delete_form.html.twig");
     }
 }

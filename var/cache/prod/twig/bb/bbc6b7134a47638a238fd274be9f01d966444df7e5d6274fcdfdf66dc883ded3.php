@@ -50,6 +50,6 @@ class __TwigTemplate_58c3c9427b9d7cbae4f130b8a752473e3782ff72163792bb6a66c4cbb84
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/money_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/money_widget.html.php");
+        return new Source("", "@Framework/Form/money_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/money_widget.html.php");
     }
 }

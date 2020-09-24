@@ -711,6 +711,6 @@ array_key_exists("_entity_config", $context)) ? (twig_get_attribute($this->env, 
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/layout.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/layout.html.twig");
+        return new Source("", "@EasyAdmin/default/layout.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/layout.html.twig");
     }
 }

@@ -187,6 +187,6 @@ class __TwigTemplate_56ab3b623a1f6e176280ba92f2b7c246c3aec055d44e2573993e3948767
 
     public function getSourceContext()
     {
-        return new Source("", "@VichUploader/Collector/mapping_collector.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/vich/uploader-bundle/Resources/views/Collector/mapping_collector.html.twig");
+        return new Source("", "@VichUploader/Collector/mapping_collector.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/vich/uploader-bundle/Resources/views/Collector/mapping_collector.html.twig");
     }
 }

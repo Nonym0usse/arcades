@@ -75,6 +75,6 @@ class __TwigTemplate_9497740fbddc2212b38c7636adc7e7a566dba482d5829904314f94eb691
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/Exception/traces.xml.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+        return new Source("", "@Twig/Exception/traces.xml.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

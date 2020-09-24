@@ -68,6 +68,6 @@ class __TwigTemplate_f5602208bfbe8e1ead34cbf8cc98dbb5e09bdfbf50247184c4ed990f001
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/field_string.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/field_string.html.twig");
+        return new Source("", "@EasyAdmin/default/field_string.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/field_string.html.twig");
     }
 }

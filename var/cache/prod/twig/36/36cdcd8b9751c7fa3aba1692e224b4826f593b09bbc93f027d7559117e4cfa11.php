@@ -112,6 +112,6 @@ class __TwigTemplate_d9d0fd40a55ba5a8caec46074bc47323497d2d1a8dbf2260269f7ed005a
 
     public function getSourceContext()
     {
-        return new Source("", "@KnpPaginator/Pagination/filtration.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/filtration.html.twig");
+        return new Source("", "@KnpPaginator/Pagination/filtration.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/filtration.html.twig");
     }
 }

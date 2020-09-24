@@ -93,6 +93,6 @@ IjEiLz4KICA8L2c+PC9nPjwvc3ZnPg==\" width=24\" height=24\">";
 
     public function getSourceContext()
     {
-        return new Source("", "@VichUploader/Collector/icon.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/vich/uploader-bundle/Resources/views/Collector/icon.html.twig");
+        return new Source("", "@VichUploader/Collector/icon.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/vich/uploader-bundle/Resources/views/Collector/icon.html.twig");
     }
 }

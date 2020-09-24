@@ -50,6 +50,6 @@ class __TwigTemplate_a60c134b7112863b6d5b763edc224941dbeb7a390f854ecaa0b51a69589
 
     public function getSourceContext()
     {
-        return new Source("", "@Security/Collector/icon.svg", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/security-bundle/Resources/views/Collector/icon.svg");
+        return new Source("", "@Security/Collector/icon.svg", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/security-bundle/Resources/views/Collector/icon.svg");
     }
 }

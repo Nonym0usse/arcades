@@ -40,7 +40,7 @@ class __TwigTemplate_40090e65a3ec9d35a35d37be767e1313a7eb7506f981234659e2f18b07b
     {
         $macros = $this->macros;
         // line 1
-        $context["__internal_28fdf6bdb2821ccca4bc295e9746fc729a2837a0e9290a347f075470ce4d1a6e"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
+        $context["__internal_5e46bb7fe1ab2b37b7c75a666c82b451c14151d05b3a0fa854d95133f2bd2c70"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
     }
@@ -76,6 +76,6 @@ class __TwigTemplate_40090e65a3ec9d35a35d37be767e1313a7eb7506f981234659e2f18b07b
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/page/blank.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/page/blank.html.twig");
+        return new Source("", "@EasyAdmin/page/blank.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/page/blank.html.twig");
     }
 }

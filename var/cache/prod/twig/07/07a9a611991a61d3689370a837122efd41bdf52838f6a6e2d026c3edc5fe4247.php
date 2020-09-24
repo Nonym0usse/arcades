@@ -227,6 +227,6 @@ class __TwigTemplate_78789d078907d58c4bcfde653c00fa20138e3c16e96dd56381370e4cf94
 
     public function getSourceContext()
     {
-        return new Source("", "@KnpPaginator/Pagination/twitter_bootstrap_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/twitter_bootstrap_pagination.html.twig");
+        return new Source("", "@KnpPaginator/Pagination/twitter_bootstrap_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/twitter_bootstrap_pagination.html.twig");
     }
 }

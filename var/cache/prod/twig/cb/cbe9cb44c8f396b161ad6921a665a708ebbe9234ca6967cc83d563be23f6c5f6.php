@@ -66,6 +66,6 @@ class __TwigTemplate_be32650d14157ea80d668fea800c12e5cf3716b9b68bde95955491b1cb7
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/field_bigint.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/field_bigint.html.twig");
+        return new Source("", "@EasyAdmin/default/field_bigint.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/field_bigint.html.twig");
     }
 }

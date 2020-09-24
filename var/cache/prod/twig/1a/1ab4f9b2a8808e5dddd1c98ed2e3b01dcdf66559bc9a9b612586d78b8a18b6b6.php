@@ -41,7 +41,7 @@ class __TwigTemplate_36835acb688bce4675d048d7d87f0641a3bf764d254f5a30ba1d7e64d9d
     {
         $macros = $this->macros;
         // line 1
-        $context["__internal_58cd041bb4d07724aec6eb1dc449c8885e1cea93848a549b0caa58f128d349db"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
+        $context["__internal_dcd5cc80796fe939ba934761bc1ec8b8b48b3f45de7e7e57323beafcd04c569d"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("translation_domain");
         // line 2
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
     }
@@ -60,15 +60,15 @@ class __TwigTemplate_36835acb688bce4675d048d7d87f0641a3bf764d254f5a30ba1d7e64d9d
         // line 7
         echo "    ";
         $context["_username_label"] = ((array_key_exists("username_label", $context)) ? ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(($context["username_label"] ?? null), [],         // line 1
-($context["__internal_58cd041bb4d07724aec6eb1dc449c8885e1cea93848a549b0caa58f128d349db"] ?? null))) : ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("login.username", [], "EasyAdminBundle")));
+($context["__internal_dcd5cc80796fe939ba934761bc1ec8b8b48b3f45de7e7e57323beafcd04c569d"] ?? null))) : ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("login.username", [], "EasyAdminBundle")));
         // line 8
         echo "    ";
         $context["_password_label"] = ((array_key_exists("password_label", $context)) ? ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(($context["password_label"] ?? null), [],         // line 1
-($context["__internal_58cd041bb4d07724aec6eb1dc449c8885e1cea93848a549b0caa58f128d349db"] ?? null))) : ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("login.password", [], "EasyAdminBundle")));
+($context["__internal_dcd5cc80796fe939ba934761bc1ec8b8b48b3f45de7e7e57323beafcd04c569d"] ?? null))) : ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("login.password", [], "EasyAdminBundle")));
         // line 9
         echo "    ";
         $context["_sign_in_label"] = ((array_key_exists("sign_in_label", $context)) ? ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(($context["sign_in_label"] ?? null), [],         // line 1
-($context["__internal_58cd041bb4d07724aec6eb1dc449c8885e1cea93848a549b0caa58f128d349db"] ?? null))) : ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("login.sign_in", [], "EasyAdminBundle")));
+($context["__internal_dcd5cc80796fe939ba934761bc1ec8b8b48b3f45de7e7e57323beafcd04c569d"] ?? null))) : ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("login.sign_in", [], "EasyAdminBundle")));
         // line 10
         echo "
     <div class=\"login-wrapper\">
@@ -201,6 +201,6 @@ class __TwigTemplate_36835acb688bce4675d048d7d87f0641a3bf764d254f5a30ba1d7e64d9d
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/page/login.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/page/login.html.twig");
+        return new Source("", "@EasyAdmin/page/login.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/page/login.html.twig");
     }
 }

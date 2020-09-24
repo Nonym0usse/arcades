@@ -50,6 +50,6 @@ class __TwigTemplate_ec6766bd198ca19fcc8d0c58cab1f21b69640ebff687b19ea80b135e2aa
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/email_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/email_widget.html.php");
+        return new Source("", "@Framework/Form/email_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/email_widget.html.php");
     }
 }

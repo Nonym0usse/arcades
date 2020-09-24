@@ -50,6 +50,6 @@ class __TwigTemplate_3f52523a19ad8347e5cc9aeaa019718a45cf9b9db9fe21c65c31621742e
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/icon-book.svg", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/images/icon-book.svg");
+        return new Source("", "@Twig/images/icon-book.svg", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/images/icon-book.svg");
     }
 }

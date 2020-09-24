@@ -53,6 +53,6 @@ class __TwigTemplate_63ba4571884eedccd3d0f0a4a3707408303f1401eac3c2cb41404dd452c
 
     public function getSourceContext()
     {
-        return new Source("", "@Doctrine/Collector/icon.svg", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/doctrine/doctrine-bundle/Resources/views/Collector/icon.svg");
+        return new Source("", "@Doctrine/Collector/icon.svg", "/Users/vellacyril/PhpstormProjects/arcades/vendor/doctrine/doctrine-bundle/Resources/views/Collector/icon.svg");
     }
 }

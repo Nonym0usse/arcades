@@ -50,6 +50,6 @@ class __TwigTemplate_97c9e849d18b59bf8faafdc4183f0be3b60c4d140a98b2a8540131c45bf
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/search_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/search_widget.html.php");
+        return new Source("", "@Framework/Form/search_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/search_widget.html.php");
     }
 }

@@ -54,6 +54,6 @@ class __TwigTemplate_ecbf042ec809505f4b1b82dd4abffdddd60ef1ea74bf354ca8b8a8016fe
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/radio_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/radio_widget.html.php");
+        return new Source("", "@Framework/Form/radio_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/radio_widget.html.php");
     }
 }

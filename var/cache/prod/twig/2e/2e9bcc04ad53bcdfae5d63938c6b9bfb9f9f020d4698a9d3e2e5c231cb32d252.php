@@ -54,6 +54,6 @@ class __TwigTemplate_1780f7f0699464f43a45e15b78fa584d61f47ade0b51e6f8e0297313e1e
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/FormTable/hidden_row.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
+        return new Source("", "@Framework/FormTable/hidden_row.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
     }
 }

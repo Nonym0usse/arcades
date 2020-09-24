@@ -256,6 +256,6 @@ header .container { display: flex; justify-content: space-between; }
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/exception.css.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/exception.css.twig");
+        return new Source("", "@Twig/exception.css.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/exception.css.twig");
     }
 }

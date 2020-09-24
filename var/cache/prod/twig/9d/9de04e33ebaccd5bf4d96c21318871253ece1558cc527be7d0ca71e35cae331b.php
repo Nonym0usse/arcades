@@ -131,6 +131,6 @@ class __TwigTemplate_51ba3b75073fed0d44c7e655ffed4eb7070641632f6d7eadcb1ecc54755
 
     public function getSourceContext()
     {
-        return new Source("", "@Doctrine/Collector/explain.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+        return new Source("", "@Doctrine/Collector/explain.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

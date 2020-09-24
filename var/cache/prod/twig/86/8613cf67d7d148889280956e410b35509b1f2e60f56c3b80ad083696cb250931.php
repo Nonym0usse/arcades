@@ -66,6 +66,6 @@ class __TwigTemplate_b5332d39a16db46992a4f9df600ba80b41637ee481f5fef6ecd02722ee0
 
     public function getSourceContext()
     {
-        return new Source("", "@EasyAdmin/default/includes/_actions_dropdown.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/includes/_actions_dropdown.html.twig");
+        return new Source("", "@EasyAdmin/default/includes/_actions_dropdown.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/easycorp/easyadmin-bundle/src/Resources/views/default/includes/_actions_dropdown.html.twig");
     }
 }

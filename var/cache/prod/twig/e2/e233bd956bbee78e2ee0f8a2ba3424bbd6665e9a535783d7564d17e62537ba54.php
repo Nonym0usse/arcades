@@ -50,6 +50,6 @@ class __TwigTemplate_31440191eb6338da0742880d1ed94cc710995137d8fc4550d24de22321a
 
     public function getSourceContext()
     {
-        return new Source("", "@Twig/images/favicon.png.base64", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/twig-bundle/Resources/views/images/favicon.png.base64");
+        return new Source("", "@Twig/images/favicon.png.base64", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/twig-bundle/Resources/views/images/favicon.png.base64");
     }
 }

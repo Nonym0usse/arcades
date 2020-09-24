@@ -50,6 +50,6 @@ class __TwigTemplate_0a020c325655ac33b4cc4fcb8e21ff7b0e1cc07e90a70e7dced1cf3f21c
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/color_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/Form/color_widget.html.php");
+        return new Source("", "@Framework/Form/color_widget.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/Form/color_widget.html.php");
     }
 }

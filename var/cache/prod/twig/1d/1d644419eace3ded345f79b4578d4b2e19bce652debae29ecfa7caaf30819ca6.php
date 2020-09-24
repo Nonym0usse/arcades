@@ -60,6 +60,6 @@ class __TwigTemplate_0d86618e9fa46292ed6a44afdd31c28ebd9d69ed6482e5e2232d98011f1
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/FormTable/form_widget_compound.html.php", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/symfony/framework-bundle/Resources/views/FormTable/form_widget_compound.html.php");
+        return new Source("", "@Framework/FormTable/form_widget_compound.html.php", "/Users/vellacyril/PhpstormProjects/arcades/vendor/symfony/framework-bundle/Resources/views/FormTable/form_widget_compound.html.php");
     }
 }

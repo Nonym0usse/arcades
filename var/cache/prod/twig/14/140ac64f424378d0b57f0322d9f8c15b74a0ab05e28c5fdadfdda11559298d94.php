@@ -139,6 +139,6 @@ class __TwigTemplate_206727b94976c68f60a7b6fa9eaeeadf337932165bb55044bef05b52715
 
     public function getSourceContext()
     {
-        return new Source("", "@KnpPaginator/Pagination/semantic_ui_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/semantic_ui_pagination.html.twig");
+        return new Source("", "@KnpPaginator/Pagination/semantic_ui_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/semantic_ui_pagination.html.twig");
     }
 }

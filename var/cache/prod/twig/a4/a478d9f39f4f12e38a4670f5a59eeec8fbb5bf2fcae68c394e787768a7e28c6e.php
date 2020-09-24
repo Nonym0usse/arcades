@@ -193,6 +193,6 @@ class __TwigTemplate_f9982034b561a9dc43852e80f94e4e17907bec5989bd67cbe7485d8c97a
 
     public function getSourceContext()
     {
-        return new Source("", "@KnpPaginator/Pagination/materialize_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades copie 2/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/materialize_pagination.html.twig");
+        return new Source("", "@KnpPaginator/Pagination/materialize_pagination.html.twig", "/Users/vellacyril/PhpstormProjects/arcades/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/materialize_pagination.html.twig");
     }
 }
