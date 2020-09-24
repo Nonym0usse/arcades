@@ -44,7 +44,7 @@ class CompteRendusController extends AbstractController
 
     public function getCompteRendu()
     {
-        $articles = $this->getDoctrine()->getRepository(CompteRendu::class)->findBy(array(), array('id' => 'ASC'));
+        $articles = $this->getDoctrine()->getRepository(CompteRendu::class)->findBy(array(), array('id' => 'DESC'));
         return $articles;
     }
 }
