@@ -42,4 +42,4 @@ easy_admin:
         icon: 'globe'
         children:
           - {entity: 'TextGallery', icon: 'globe', label: 'Ajouter un texte'}
-      - { label: 'Revenir au site', url: 'https://arcades13127.fr', rel: 'index' }
+      - { label: 'Revenir au site', url: 'https://arcades13127.com', rel: 'index' }
