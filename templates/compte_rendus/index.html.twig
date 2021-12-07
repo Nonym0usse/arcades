@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comptes rendus de réunion - Association Arcades 13127 - Vitrolles{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock%}
+
+    {% block main %}
+        {{ parent() }}
+
+        <div class="index-content">
+            <div class="container">
+                <div class="row">
+                    {% for article in articles %}
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <h5>{{ article.titre }}</h5>
+                                <a href="{{ path('show_compterendu', {'id': article.id}) }}" class="blue-button" target="_blank" title="Voir l'article" class="btn btn-black">Voir plus</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}
+
+

@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Remplir formulaire - Association Arcades Vitrolles{% endblock %}
+
+{% block body %}
+
+    <div class="wrap">
+        {% block header %}
+            {{ parent() }}
+        {% endblock%}
+
+        {% block main %}
+            {{ parent() }}
+
+
+            <section class="site-section py-sm">
+                <div class="container">
+                    <div class="row blog-entries">
+                        <div class="col-md-12  main-content" style="padding-top: 50px">
+                            <div class="row">
+                                {% for formulaire in formulaires %}
+                                    <div class="col-md-4">
+                                        <a href="{{ path('showform', {'id': formulaire.id}) }}" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                            <img src="{{ vich_uploader_asset(formulaire, 'imageFile') }}" alt="{{ formulaire.titre }}">
+                                            <div class="blog-content-body">
+                                                <div class="post-meta">
+                                                    <span class="mr-2">Publié le : {{ formulaire.dates |date('d-m-Y')}} </span>
+                                                </div>
+                                                <h2>{{ formulaire.titre }}</h2>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+                                {{ knp_pagination_render(formulaires) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END main-content -->
+            </section>
+
+
+        {% endblock %}
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <h3>A propos de nous</h3>
+                        <p>Notre association, issue de la loi de 1901,souhaite faire évoluer la démocratie ,sans entrer dans le jeu politique représentatif, en faisant intervenir le citoyen de façon active et responsable dans toutes les décisions qui concernent la cité.</p>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <div class="row">
+
+                            <div class="col-md-§">
+
+                                <div class="mb-5">
+                                    <h3>Contact</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">E-mail: arcades13127@orange.fr</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Tél: 06.08.215.215</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <br>
+                        <p class="small">Nombres de visites</p>
+                        <img src="https://counter7.wheredoyoucomefrom.ovh/private/compteurdevisite.php?c=kutt64hbrmyt96wu7ld11y5192j4ysdk" border="0" title="compteur de visite" alt="compteur de visite">
+                        <br>
+                        <p class="small" style="padding-top: 10px">
+                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Développé par <a href="https://microvella.com" target="_blank" title="Microvella" >Cyril VELLA - Microvella</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+{% endblock %}

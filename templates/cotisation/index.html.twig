@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adhérez à l'association - Association Arcades13127 - Vitrolles{% endblock %}
+
+{% block body %}
+    {% block header %}
+        {{ parent() }}
+    {% endblock%}
+
+    {% block main %}
+        {{ parent() }}
+
+
+        <div class="container">
+            <div class="row">
+                <h3 class="article-name">La démocratie citoyenne se définit par la participation active et responsable des citoyens dans la décision politique locale , régionale et nationale.</h3>
+                <p class="txt-complementaire">Nous devons être nombreux afin de donner l'avis  citoyen qui n'est pas toujours celui du politique  ,engoncé dans le court terme et le soucis de sa réélection. C'est un problème d'organisation démocratique et non de personne. Il s'agit d'accompagner la décision représentative.</p>
+                <img src="{{ asset('images/main.jpg') }}"  alt="adherez" class="img-adherer">
+                {{ form_start(form, {'class': 'form-horizontal', 'attr': {'class': 'form-horizontal', 'id': 'myForm'}}) }}
+                <div class="form-group">
+                    {{ form_row(form.nom, {'label': 'Nom', 'attr': {'placeholder': 'Votre nom', 'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.prenom, {'label': 'Prénom', 'attr': {'placeholder': 'Votre prenom', 'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.mail, {'label': 'E-mail', 'attr': {'placeholder': 'Votre e-mail', 'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(form.telephone, {'label': 'Téléphone', 'attr': {'placeholder': 'Votre téléphone', 'class': 'form-control'}}) }}
+                </div>
+                <div class="form-group">
+                    <label>Montant en € - <span style="color: red">Une donation de 5€ minimum est nécessaire pour être membre de l'association.</span></label>
+                    <input type="number" class="form-control" id="amount" required>
+                </div>
+                <div id="paiement" class="paypal-button-container-1" style="padding-bottom: 10px"></div>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+
+    {% endblock %}
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+    <script>
+
+        var montant = "5";
+
+        $( "#amount" ).change(function() {
+            montant = $("#amount").val();
+
+            if(montant == null || montant < 5){
+                montant = "5";
+            }
+        });
+
+        $('#contactForm1').on('submit', function(e) {
+
+            var form = $(this);
+            var url = form.attr('action');
+            console.log(montant);
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                    alert(data); // show response from the php script.
+                }
+            });
+
+        });
+        paypal.Button.render({
+            env: 'production',
+
+            style: {
+                layout: 'horizontal',  // horizontal | vertical
+                size:   'medium',    // medium | large | responsive
+                shape:  'rect',      // pill | rect
+                color:  'black',
+                tagline : 'false'      // gold | blue | silver | white | black
+            },
+
+            funding: {
+                allowed: [
+                    paypal.FUNDING.CARD
+                ],
+                disallowed: []
+            },
+
+            commit: true,
+
+            client: {
+                production: 'AdUG3irf2jvJ0m9vKcoVrohu5yRqtbTXXdHddus1s84PPOmgnQYzYN-HnJ4409RuL2FhgTOs65X6vVUb'
+            },
+
+            payment: function (data, actions) {
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: {
+                                    total: montant,
+                                    currency: 'EUR'
+                                }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            onAuthorize: function (data, actions) {
+                return actions.payment.execute()
+                    .then(function () {
+                        alert('Merci! Vous êtes désormais membre.');
+                        document.getElementById("myForm").submit();
+
+                    });
+            }
+        }, '.paypal-button-container-1');
+
+    </script>
+{% endblock %}

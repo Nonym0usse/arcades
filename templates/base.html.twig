@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="L'association Arcades 13127 souhaite faire évoluer la démocratie en faisant intervenir le citoyen de façon active et responsable dans toutes les décisions qui concernent la ville de Vitrolles.">
+    <meta name="keywords" content="association, comptes-rendus, adhésions, citoyens, vitrolles, commerces, arcades 13127, association citoyenne, je like vitrolles">
+    <meta name="author" content="VELLA CYRIL">
+    <title>{% block title %}Bienvenue{% endblock %}</title>
+    {% block stylesheets %}
+        <!-- IMPORT HOMEMADE CSS -->
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
+        <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('dist/photoswipe.css') }}">
+        <link rel="stylesheet" href="{{ asset('dist/default-skin/default-skin.css') }}">
+        <script src="{{ asset('dist/photoswipe.min.js') }}"></script>
+        <script src="{{ asset('dist/photoswipe-ui-default.min.js') }}"></script>
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    {% block header %}
+        <header role="banner">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 social">
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                            <a href="#"><span class="fa fa-instagram"></span></a>
+                            <a href="#"><span class="fa fa-youtube-play"></span></a>
+                            {% if not app.user %}
+                                <a href="{{ path('security_login') }}"><span class="fa fa-user"></span></a>
+                            {%  else %}
+                                <a href="/admin" title="Espace admin association arcades13127">Espace Admin</a>
+                                <a href="{{ path('security_logout') }}">Deconnexion</a>
+                            {% endif %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container logo-wrap">
+                <div class="row pt-5">
+                    <div class="col-12 text-center">
+                        <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
+                        <img src="{{ asset('images/logo.png') }}" alt="logo association arcades 13127" class="logo"/>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-md  navbar-light bg-light">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" title="accueil" href="/">Accueil</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" title="les citoyens s'expriment" href="{{ path('citoyens') }}">Les citoyens s'expriment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="comptes rendus des réunions" href="{{ path('compte_rendus') }}">Comptes rendus des réunions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="Adhérer à l'association" href="{{ path('inscription') }}"><b>Adhérer</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="Remplir une pétition" href="{{ path('petition') }}">Pétitions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="Remplir un formulaire" href="{{ path('formulaire') }}">Remplir un formulaire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="Remplir un formulaire" href="{{ path('gallery') }}">Galerie d'images</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+    {% endblock %}
+
+    {% block main %}
+
+    {% endblock %}
+
+    {% block footer %}
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <h3>A propos de nous</h3>
+                        <p>Notre association, issue de la loi de 1901,souhaite faire évoluer la démocratie ,sans entrer dans le jeu politique représentatif, en faisant intervenir le citoyen de façon active et responsable dans toutes les décisions qui concernent la cité.</p>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <div class="row">
+
+                            <div class="col-md-§">
+
+                                <div class="mb-5">
+                                    <h3>Contact</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" title="contactez-nous par mail">E-mail: arcades13127@orange.fr</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" title="contactez-nous par téléphone">Tél: 06.08.215.215</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="small" style="padding-top: 10px">
+                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Développé par <a href="https://microvella.com" target="_blank" title="Microvella" >Cyril VELLA - Microvella</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    {% endblock %}
+
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-migrate-3.0.0.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}" rel="javascript"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0&appId=1389493977873570&autoLogAppEvents=1"></script>
+{% endblock %}
+</body>
+</html>

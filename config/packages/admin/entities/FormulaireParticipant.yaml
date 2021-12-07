@@ -1,0 +1,17 @@
+easy_admin:
+  entities:
+    FormulaireParticipant:
+      class: App\Entity\FormulaireParticipant
+      list:
+        title: "Liste des formulaires remplis"
+        fields:
+          - { property: 'id' }
+          - { property: 'nom' }
+          - { property: 'prenom'}
+          - { property: 'tel'}
+          - { property: 'mail'}
+          - { property: 'date'}
+          - { property: 'lien'}
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

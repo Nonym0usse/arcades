@@ -1,0 +1,30 @@
+easy_admin:
+  entities:
+    CompteRendu:
+      class: App\Entity\CompteRendu
+      new:
+        title: "Ajouter un compte rendu"
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des comptes rendus', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer le compte rendu", css_class: 'btn btn-danger'}
+        fields:
+          - {property: 'titre'}
+          - {property: 'description', type: 'fos_ckeditor'}
+      edit:
+        title: "Modifier un compte rendu"
+        fields:
+          - {property: 'titre'}
+          - {property: 'description', type: 'fos_ckeditor'}
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des comptes rendus', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer le compte rendu", css_class: 'btn btn-danger'}
+      list:
+        title: "Liste des comptes rendus"
+        fields:
+          - { property: 'id' }
+          - { property: 'titre' }
+          - { property: 'description'}
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          - {name: 'new', icon: 'plus', label: 'Ajouter un compte rendu', css_class: 'btn btn-success'}

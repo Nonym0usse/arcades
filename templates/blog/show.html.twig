@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.name }} - Association Arcades 13127 - Vitrolles{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock%}
+
+    {% block main %}
+        {{ parent() }}
+
+    <div class="container" style="padding-bottom: 50px">
+        <div class="row">
+            <h1 class="article-name">{{ article.name }}</h1>
+            <img src="{{ vich_uploader_asset(article, 'imageFile') }}" alt="{{ article.name }}" class="img-article">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h6 style="margin: 0 auto; text-align: center; color: darkgrey; padding-top: 20px">Publié le :  {{ article.dates |date('d-m-Y')}}</h6>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="paragraph">
+                {{ article.description| raw}}
+            </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.titre }} - Association Arcades 13127 - Vitrolles{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock%}
+
+    {% block main %}
+        {{ parent() }}
+
+        <div class="container" style="padding-bottom: 50px">
+            <div class="row">
+                <h1 class="article-name">{{ article.titre }}</h1>
+                <p class="paragraph">
+                    {{ article.description| raw }}
+                </p>
+            </div>
+        </div>
+    {% endblock %}
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}

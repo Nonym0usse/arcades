@@ -1,0 +1,2 @@
+parameters:
+  app.path.product_images: /uploads/images/products

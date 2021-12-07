@@ -1,0 +1,30 @@
+easy_admin:
+  entities:
+    Citoyen:
+      class: App\Entity\Citoyen
+      new:
+        title: "Ajouter une idée"
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des expressions citoyennes', css_class: 'btn btn-success'}
+        fields:
+          - {property: 'titre'}
+          - {property: 'description', type: 'fos_ckeditor'}
+          - {property: 'created_at'}
+      edit:
+        title: "Modifier une expression citoyenne"
+        fields:
+          - {property: 'titre'}
+          - {property: 'description', type: 'fos_ckeditor'}
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des expressions', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer l'expression", css_class: 'btn btn-danger'}
+      list:
+        title: "Liste des expressions des citoyennes"
+        fields:
+          - { property: 'id' }
+          - { property: 'titre' }
+          - { property: 'description'}
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          - {name: 'new', icon: 'plus', label: 'Ajouter une idée', css_class: 'btn btn-success'}

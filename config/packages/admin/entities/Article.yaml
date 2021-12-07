@@ -1,0 +1,34 @@
+easy_admin:
+  entities:
+    Product:
+      class: App\Entity\Product
+      edit:
+        title: "Modifier un article"
+        fields:
+          - {property: 'name'}
+          - {property: 'description', type: 'fos_ckeditor'}
+          - { property: 'imageFile', type: 'vich_image' }
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des articles', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer l'article", css_class: 'btn btn-danger'}
+      new:
+        title: "Ajouter un article"
+        actions:
+          - {name: 'list', icon: 'tag', label: 'Liste des articles', css_class: 'btn btn-success'}
+          - {name: 'delete', icon: 'trash', label: "Supprimer l'article", css_class: 'btn btn-danger'}
+        fields:
+          - {property: 'name'}
+          - {property: 'description', type: 'fos_ckeditor'}
+          - { property: 'imageFile', type: 'vich_image' }
+          - {property: 'dates'}
+      list:
+        title: "Liste des articles"
+        fields:
+          - { property: 'id' }
+          - { property: 'name' }
+          - { property: 'description'}
+          - { property: 'image', type: 'image', base_path: '%app.path.product_images%' }
+        actions:
+          - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-primary'}
+          - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
+          - {name: 'new', icon: 'plus', label: 'Ajouter un article', css_class: 'btn btn-success'}

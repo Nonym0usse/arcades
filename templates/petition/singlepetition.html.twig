@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ petition.title }} - Association Arcades 13127 - Vitrolles{% endblock %}
+
+{% block body %}
+
+    {% block header %}
+        {{ parent() }}
+    {% endblock%}
+
+    {% block main %}
+        {{ parent() }}
+
+        <div class="container">
+            <div class="row">
+                <h1 class="article-name">{{ petition.title }}</h1>
+                <img src="{{ vich_uploader_asset(petition, 'imageFile') }}" alt="{{ petition.title }}" class="img-article">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h6 style="margin: 0 auto; text-align: center; color: darkgrey; padding-top: 20px">Publié le :  {{ petition.date |date('d-m-Y')}}</h6>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p class="paragraph">
+                        {{ petition.description| raw}}
+                    </p>
+                </div>
+                <hr class="separator">
+                <h4 class="title-separator">Signez la pétition en remplissant le formulaire ci-dessous :</h4>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="container">
+                        <div class="row">
+                            {{ form_start(form, {'class': 'form-horizontal', 'attr': {'class': 'form-horizontal', 'id': 'myForm'}}) }}
+                            <div class="form-group">
+                                {{ form_row(form.nom, {'label': 'Nom', 'attr': {'placeholder': 'Votre nom', 'class': 'form-control'}}) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_row(form.prenom, {'label': 'Prénom', 'attr': {'placeholder': 'Votre prenom', 'class': 'form-control'}}) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_row(form.mail, {'label': 'E-mail', 'attr': {'placeholder': 'Votre e-mail', 'class': 'form-control'}}) }}
+                            </div>
+                            <div class="form-group">
+                                {{ form_row(form.tel, {'label': 'Téléphone', 'attr': {'placeholder': 'Votre téléphone', 'class': 'form-control'}}) }}
+                            </div>
+                            <div class="form-group">
+                                <label class="container-custom">En cochant cette case, je certifie être membre de l'association Arcades13127. Dans le cas contraire, rejoignez-nous <a href="{{ path('inscription') }}">ici</a>.
+                                    <input type="checkbox"  required name="est_membre">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                {{ form_row(form.save, { 'label': 'Je signe', 'attr': {'class': 'btn btn-primary'}}) }}
+                            </div>
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="social-box">
+                    <h5>Cet article vous plaît? Partagez-le sur :</h5>
+                    <div  class="fb-share-button" data-href="{{ url }}" data-layout="button_count" data-size="small"><a id="element1" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
+                    <br><br>
+                    <a id="element2" href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+    {% block footer %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}

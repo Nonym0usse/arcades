@@ -1,0 +1,160 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Association Arcades Vitrolles{% endblock %}
+
+{% block body %}
+
+    <div class="wrap">
+      {% block header %}
+        {{ parent() }}
+      {% endblock%}
+
+      {% block main %}
+      {{ parent() }}
+
+
+      <section class="site-section pt-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="owl-carousel owl-theme home-slider">
+                <div>
+                  <div class="a-block d-flex align-items-center height-lg" style="background-image: url('/images/second.jpg'); background-position: top">
+                    <div class="text half-to-full">
+                      <h1 class="txt-presentation animated pulse infinite delay-2s">{{ diapo.diapo1 }}</h1>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="a-block d-flex align-items-center height-lg" style="background-image: url('/images/main.jpg'); background-position: center">
+                    <div class="text half-to-full">
+                      <h1 class="txt-presentation animated pulse infinite delay-2s">{{ diapo.diapo2 }}</h1>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+      <!-- END section -->
+
+      <section class="site-section py-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="mb-4">Actualités</h2>
+            </div>
+          </div>
+          <div class="row blog-entries">
+            <div class="col-md-12 col-lg-8 main-content">
+              <div class="row">
+                {% for article in articles %}
+                <div class="col-md-6">
+                  <a href="{{ path('show', {'id': article.id}) }}" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                    <img src="{{ vich_uploader_asset(article, 'imageFile') }}" alt="{{ article.name }}">
+                    <div class="blog-content-body">
+                      <div class="post-meta">
+                        <span class="mr-2">Publié le : {{ article.dates |date('d-m-Y')}} </span>
+                      </div>
+                      <h2>{{ article.name }}</h2>
+                    </div>
+                  </a>
+                </div>
+              {% endfor %}
+                {{ knp_pagination_render(articles) }}
+              </div>
+            </div>
+
+            <!-- END main-content -->
+
+            <div class="col-md-12 col-lg-4 sidebar">
+              <!-- END sidebar-box -->
+              <div class="sidebar-box">
+                <div class="bio text-center">
+                  <div class="bio-body">
+                    <h2>Qui sommes-nous?</h2>
+                    <br>
+                    <p>
+                      Ce qui définit le progrès dans le domaine politique, c'est que sans trêve, les créateurs triomphent de l'esprit d'inertie sans que la violence ou qu'une révolution soit nécessaire.
+                    <br>
+                      Notre association, issue de la  loi de 1901,souhaite faire évoluer la démocratie ,sans entrer dans le jeu politique représentatif, en faisant intervenir le citoyen de façon active et responsable dans toutes les décisions qui concernent la cité.
+                      <br>
+                      Nous créons un site pour vous informer, et vous tenir au courant de toutes nos démarches auprès des  élus.
+                      <br>
+                      ADHEREZ à ARCADES13127!
+                    </p>
+                    <p class="social">
+                      <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+                      <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+                      <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+                      <a href="#" class="p-2"><span class="fa fa-youtube-play"></span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END sidebar-box -->
+              <div class="sidebar-box">
+                <h3 class="heading">Réseaux sociaux</h3>
+                <div class="post-entry-sidebar">
+                  <div class="fb-page" data-href="https://www.facebook.com/JelikeVitrolles/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/JelikeVitrolles/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JelikeVitrolles/">Je Like Vitrolles</a></blockquote></div>
+                </div>
+              </div>
+              <!-- END sidebar-box -->
+            </div>
+            <!-- END sidebar -->
+
+          </div>
+        </div>
+      </section>
+
+
+      {% endblock %}
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <h3>A propos de nous</h3>
+              <p>Notre association, issue de la loi de 1901,souhaite faire évoluer la démocratie ,sans entrer dans le jeu politique représentatif, en faisant intervenir le citoyen de façon active et responsable dans toutes les décisions qui concernent la cité.</p>
+            </div>
+            <div class="col-md-6 ml-auto">
+              <div class="row">
+
+                <div class="col-md-§">
+
+                  <div class="mb-5">
+                    <h3>Contact</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">E-mail: arcades13127@orange.fr</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Tél: 06.08.215.215</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <br>
+              <p class="small">Nombres de visites</p>
+              <img src="https://counter7.wheredoyoucomefrom.ovh/private/compteurdevisite.php?c=kutt64hbrmyt96wu7ld11y5192j4ysdk" border="0" title="compteur de visite" alt="compteur de visite">
+              <br>
+              <p class="small" style="padding-top: 10px">
+                Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tous droits réservés | Développé par <a href="https://microvella.com" target="_blank" title="Microvella" >Cyril VELLA - Microvella</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+{% endblock %}
